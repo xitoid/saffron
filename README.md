@@ -1,2 +1,2 @@
 # saffron
-Xoweb's framework.
+Xoweb's framework packages.
