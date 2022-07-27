@@ -11,7 +11,7 @@ class ServiceManager
     return $this->services;
   }
   final public function setServices(ServiceRegister $services) {
-    if(is_service()) {
+    if(is_service($services)) {
       $this->services = $services;
       return true;
     }
