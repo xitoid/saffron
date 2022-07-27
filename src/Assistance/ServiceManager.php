@@ -12,6 +12,13 @@ class ServiceManager
   final public function getServices() {
     return $this->services;
   }
+  final public function setServices(ServiceRegister $services) {
+    if(is_service()) {
+      $this->services = $services;
+      return true;
+    }
+    return false;
+  }
   final public function run($name) {
     if(!isset($this->services[$name])) die("Undefined Service $name.");
     $service = $this->services[$name];
