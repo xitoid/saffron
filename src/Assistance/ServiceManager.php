@@ -6,9 +6,7 @@ use Xitoid\Saffron\Blueprint\ServiceRegister;
 class ServiceManager
 {
   protected array $services = [];
-  public function __construct(array $service) {
-    $this->service = $service;
-  }
+  public function __construct() {}
   final public function getServices() {
     return $this->services;
   }
