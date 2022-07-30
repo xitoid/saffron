@@ -15,9 +15,9 @@ class RouteRegister
     $this->route[$path] = [
       'controller' => $controller,
       'action' => $action,
+      'redir' => $redir,
       'models' => $model,
-      'values' => $values,
-      'redir' => $redir
+      'values' => $values
     ];
   }
 }
