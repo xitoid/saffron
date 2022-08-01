@@ -24,18 +24,8 @@ class Route
     return $newRoutes;
   }
   protected static function CheckStructure($values) {
+    // On Going . . .
     if (!is_array($values)) return false;
-    if (!isset(
-      $values['controller']
-      /*$values['action'],
-      $values['action'],
-      $values['redir'],
-      $values['models'],
-      $values['values']*/
-    )) {
-      echo " [not exists] ";
-      return false;
-    }
     return true;
   }
 }
