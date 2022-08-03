@@ -5,7 +5,7 @@ class Service
 {
   protected $response;
   protected $manager;
-  public function run() {}
+  public function run($args = []) {}
   final public function getResponse() {
     return $this->response;
   }
